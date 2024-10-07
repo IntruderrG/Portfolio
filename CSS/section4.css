@@ -1,0 +1,172 @@
+.sec {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.abouthead {
+  font-size: 80px;
+  font-weight: bold;
+  padding: 30px;
+  /* text-align: center; */
+}
+.aboutmain {
+  height: 1000px;
+  /* background-color: yellow; */
+  display: flex;
+  padding: 30px;
+  column-gap: 10px;
+}
+.asec1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.educontent {
+  height: 50%;
+  width: 100%;
+  /* border: 4px solid black;
+  border-radius: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  row-gap: 40px;
+}
+.maininsider p {
+  font-size: 50px;
+  text-decoration: underline;
+}
+.asec2 {
+  flex: 1;
+  /* background-color: violet; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 4px solid black;
+  border-radius: 10px; */
+}
+.maininsider {
+  display: flex;
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  /* justify-content: center; */
+  column-gap: 20px;
+}
+.maininsider img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  /* object-position: center; */
+}
+
+.aboutouterslider {
+  width: 90%;
+  height: 60%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.aboutinnerslider {
+  width: 400%;
+  height: 100%;
+  /* background-color: purple; */
+  display: flex;
+}
+.aboutinnerslider input {
+  display: none;
+}
+.aboutimgcontainer {
+  width: 25%;
+  height: 100%;
+  transition: all 0.5s;
+
+  /* margin-left: -10%; */
+  /* background-color: yellow; */
+}
+.aboutimgcontainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.aboutmanual-nav {
+  height: 20px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  /* position: absolute; */
+  margin-top: -30px;
+}
+.aboutmanual-btn {
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.aboutmanual-btn:hover {
+  background-color: white;
+}
+.aboutmanual-btn:active {
+  transform: scale(0.5);
+}
+
+#raboutadio1:checked ~ .aboutfirst {
+  margin-left: 0px;
+}
+#aboutradio2:checked ~ .aboutfirst {
+  margin-left: -25%;
+}
+#aboutradio3:checked ~ .aboutfirst {
+  margin-left: -50%;
+}
+#aboutradio4:checked ~ .aboutfirst {
+  margin-left: -75%;
+}
+
+.aboutdetails {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.aboutcard1 {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.aboutcontent {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 7px; */
+}
+.maindet {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  column-gap: 80px;
+  font-size: 30px;
+}
+.aboutp1 {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.aboutp1:hover {
+  transform: scale(1.01);
+}
+
+.aboutp1:active {
+  transform: scale(0.95);
+}

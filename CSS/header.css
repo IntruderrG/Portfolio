@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar {
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  /* column-gap: 100px; */
+  justify-content: space-evenly;
+  position: sticky;
+  /* background-color: white; */
+  top: 0;
+  /* opacity: 70%; */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  transition: all 0.3s;
+}
+.outnavgen {
+  /* background-color: green; */
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-around;
+  padding: 10px;
+  /* position: relative; */
+}
+.add1 {
+  flex: 0.2;
+  margin-right: 70px;
+  align-items: center;
+}
+.add2 {
+  margin-left: 70px;
+  flex: auto;
+}
+.add3 {
+  flex: 0.2;
+  margin-left: 50px;
+  align-items: center;
+}
+.im {
+  transition: all 0.3s;
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+}
+.im:hover {
+  transform: scale(1.1);
+}
+.im:active {
+  transform: scale(0.05);
+}
+.navgen {
+  /* background-color: red; */
+  /* opacity: 1; */
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  transition: all 0.3s;
+  z-index: 10;
+  /* overflow: scroll; */
+  position: relative;
+}
+.navgen:hover {
+  transform: scale(1.05);
+}
+.genimage {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  /* z-index: -1; */
+}
+.genpara {
+  font-size: 25px;
+  /* font-family: "Playwrite DE Grund", cursive; */
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+.genpara:hover {
+  text-decoration: underline;
+}
+.lst {
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  min-width: 100%;
+  background-color: white;
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); */
+
+  /* border-radius: 20px; */
+  width: 18%;
+  /* height: 35vh; */
+  font-size: 25px;
+  /* font-family: "Playwrite DE Grund", cursive;f */
+  overflow: hidden;
+  display: none;
+  /* z-index: 10; */
+}
+.genlist {
+  /* height: 100%;   */
+  margin-top: 10px;
+
+  width: 100%;
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.genlist li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  transition: all 0.3s;
+  /* border-width: 0px 0px 1px 0px;
+  border-color: black;
+  border-style: solid; */
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.genlist li:hover {
+  /* background-color: magenta; */
+  transform: scale(1.05);
+  background-color: maroon;
+  font-weight: 400;
+}
+.genlist li:active {
+  /* background-color: magenta; */
+  transform: scale(0.95);
+}
+.genlist li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+.genlist li a:hover {
+  color: white;
+}
+.navgen:hover .lst {
+  display: block;
+}
